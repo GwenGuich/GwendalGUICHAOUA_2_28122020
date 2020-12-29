@@ -1,18 +1,98 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
 		<title>reservia</title>
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel = “stylesheet” href = ” path / to / font -awesome / css / font – awesome.min.css ” >
 	</head>
 	<body>
 		<header>
+			<img src="../img/reservia.svg" alt="logo réservia">
+			<button id="inscription">S'inscrire</button>
+			<nav>
+				<button>Hébergements</button>
+				<button>Activités</button>
+			</nav>
+			<h1>Trouver votre hébergement pour des vacances de rêve <br>En plein centre ville ou en pleine nature</h1>
 			
-		</header>
-		<footer>
-			
-		</footer>
+            <i class="fas fa-map-marker-alt"></i>
+			<input type="search" name="rechercher">
+			<button>recherche</button>
 
+			<h3>Filtres</h3> 
+			<ul id="filtres">
+				<li class="filtre">Economique</li>
+				<li class="filtre">Familial</li>
+				<li class="filtre">Romantique</li>
+				<li class="filtre">Animaux autorisés</li>
+			</ul>
+			
+			<p>Plus de 500 logements sont disponibles dans cette ville</p>
+		</header>
+
+		 <!--Hèbergements de la ville recherché-->
+
+		<div id="conteneurville">
+			<h2 id="marseille">Hèbergement à Marseille</h2>
+			<div id="elementville">
+				<div class="ville"><img src="../img/marseille1.jpg"><br>Auberge la Cannebière<br>Nuit à partir de 25E</div>
+				<div class="ville"><img src="../img/marseille2.jpg"><br>Hôtel de port<br>Nuit à partir de 52E</div>
+				<div class="ville"><img src="../img/marseille3.jpg"><br>Hôtel Les mouettes<br>Nuit à partir de 75E</div>
+				<div class="ville"><img src="../img/marseille4.jpg"><br>Hôtel de la mer<br>Nuit à partir de 46E</div>
+				<div class="ville"><img src="../img/marseille5.jpg"><br>Auberge Le panier<br>Nuit àpartir de 23E</div>
+				<div class="ville"><img src="../img/marseille6.jpg"><br>Hôtel chez Amina<br>Nuit à partir de 90E</div>
+			</div>
+			<p>Afficher plus</p>
+        </div>
+        
+        <!--Les hôtels les plus populaires--> 
+
+		<div id="conteneurhotel">
+			<h2 >Les plus populaires</h2>
+			<p>logo flêche</p>
+			<div id="elementhot">
+				<div class="hotel"><img src="../img/pop1.jpg"><br>Hôtel Le soleil du matin<br>Nuit à partir de 128E</div>
+				<div class="hotel"><img src="../img/pop2.jpg"><br>Au coeur de l'eau Chambres d'hôtes<br>Nuit à partir de 71E</div>
+				<div class="hotel"><img src="../img/pop3.jpg"><br>Hôtel tout bleu et blanc<br>Nuit à partir de 68E</div>
+			</div>
+		</div>
+        
+        <!--Activités de la ville recherché-->
+
+		<div id="conteneuractivites">
+			<h2 >Activités à Marseille</h2>
+			<div id="elementsactivites">
+				<div class="activite"><img src="../img/act1.jpg"><br>Vieux Port</div>
+				<div class="activite"><img src="../img/act2.jpg"><br>Fort de Pomègues</div>
+				<div class="activite"><img src="../img/act3.jpg"><br>Iles du Frioul</div>
+				<div class="activite"><img src="../img/act4.jpg"><br>Parc National des Calanques</div>
+				<div class="activite"><img src="../img/act5.jpg"><br>Notre-Dame-de-la-Garde</div>
+				<div><img src="../img/act6.jpg"><br>Longchamp</div> Parc 
+			</div>
+		</div>
+
+		<footer>
+			<nav>
+				<ul id="propos">
+					<li class="footer">A propos</li>
+					<li class="footer">Fonctionnement du site</li>															
+					<li class="footer">Conditions générales de vente</li>
+					<li class="footer">Données et confidentialité</li>
+				</ul>
+
+				<ul id="hebergements">
+					<li class="footer">Nos hébergements</li>
+					<li class="footer">Charte qualité</li>
+					<li class="footer">Soumettre votre hôtel</li>
+				</ul>
+			
+				<ul id="Assistance">
+					<li class="footer">Assistance</li>
+					<li class="footer">Centre d'aide</li>
+					<li class="footer">Nous contacter</li>
+				</ul>
+			</nav>
+		</footer>
 	</body>
 </html>
