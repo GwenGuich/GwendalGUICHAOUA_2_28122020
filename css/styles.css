@@ -1,0 +1,71 @@
+/* header */
+
+#logoreservia
+{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#navigation
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
+header
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+/* section recherche */
+	
+#recherche
+{
+	display: flex;
+	flex-direction: column;
+}
+
+#filtres
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.filtre
+{
+	display: flex;
+
+}
+
+
+/* Hèbergements de la ville recherché */
+
+#conteneurville
+{
+	display: flex;
+}
+
+/* Les hôtels les plus populaires */
+
+#conteneurhotel
+{
+	display: flex;
+}
+
+/* Activités de la ville recherché */
+
+#conteneuractivites
+{
+	display: flex;
+}
+
+
+
+/* Footer */
+
+footer
+{
+	display: flex;
+}

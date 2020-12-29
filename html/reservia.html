@@ -1,35 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 	<head>
 		<meta charset="utf-8">
 		<title>reservia</title>
-		<link rel="stylesheet" type="text/css" href="css/styles.css">
-		<link rel = “stylesheet” href = ” path / to / font -awesome / css / font – awesome.min.css ” >
+		<link rel="stylesheet" type="text/css" href="../css/styles.css">
+		<link rel="stylesheet" href="../fontawesome-free-5.15.1-web/css/font–awesome.min.css">
 	</head>
+	
 	<body>
 		<header>
-			<img src="../img/reservia.svg" alt="logo réservia">
-			<button id="inscription">S'inscrire</button>
-			<nav>
+			<img id="logoreservia" src="../img/reservia.svg" alt="logo de réservia">
+			<nav id="navigation">
 				<button>Hébergements</button>
 				<button>Activités</button>
+				<button>S'inscrire</button>
 			</nav>
-			<h1>Trouver votre hébergement pour des vacances de rêve <br>En plein centre ville ou en pleine nature</h1>
-			
-            <i class="fas fa-map-marker-alt"></i>
-			<input type="search" name="rechercher">
-			<button>recherche</button>
+        </header>
+		
+		<!-- section recherche -->
 
-			<h3>Filtres</h3> 
-			<ul id="filtres">
-				<li class="filtre">Economique</li>
-				<li class="filtre">Familial</li>
-				<li class="filtre">Romantique</li>
-				<li class="filtre">Animaux autorisés</li>
-			</ul>
+		<section id="recherche">
+			<h1>Trouver votre hébergement pour des vacances de rêve <br>En plein centre ville ou en pleine nature</h1>
+			<div id="barrerecherche">
+            	<i class="fas fa-map-marker-alt"></i>
+				<input type="search" name="rechercher">
+				<button>recherche</button>
+            </div>
+			 
+			<div id="filtres">
+				<p>Filtres</p>
+				<p class="filtre">Economique</p>
+				<p class="filtre">Familial</p>
+				<p class="filtre">Romantique</p>
+				<p class="filtre">Animaux autorisés</p>
+			</div>
 			
 			<p>Plus de 500 logements sont disponibles dans cette ville</p>
-		</header>
+		</section>
 
 		 <!--Hèbergements de la ville recherché-->
 
@@ -73,7 +80,7 @@
 		</div>
 
 		<footer>
-			<nav>
+			
 				<ul id="propos">
 					<li class="footer">A propos</li>
 					<li class="footer">Fonctionnement du site</li>															
@@ -92,7 +99,7 @@
 					<li class="footer">Centre d'aide</li>
 					<li class="footer">Nous contacter</li>
 				</ul>
-			</nav>
+			
 		</footer>
 	</body>
 </html>
