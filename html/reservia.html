@@ -9,18 +9,19 @@
 	
 	<body>
 		<header>
-			<img id="logoreservia" src="../img/reservia.svg" alt="logo de réservia">
-			<nav id="navigation">
-				<button>Hébergements</button>
-				<button>Activités</button>
-				<button>S'inscrire</button>
+			<img class="logoreservia" src="../img/reservia.svg" alt="logo de réservia">
+			<nav class="navigation">
+				<button class="boutonnavigation"><a href="#marseille"> Hébergements</a></button>
+				<button class="boutonnavigation"><a href="#activites"> Activités</a></button>
+				<button id="inscrition">S'inscrire</button>
 			</nav>
         </header>
 		
 		<!-- section recherche -->
 
 		<section id="recherche">
-			<h1>Trouver votre hébergement pour des vacances de rêve <br>En plein centre ville ou en pleine nature</h1>
+			<h1>Trouver votre hébergement pour des vacances de rêve</h1> 
+			<p>En plein centre ville ou en pleine nature</p>
 			<div id="barrerecherche">
             	<i class="fas fa-map-marker-alt"></i>
 				<input type="search" name="rechercher">
@@ -29,7 +30,7 @@
 			 
 			<div id="filtres">
 				<p>Filtres</p>
-				<p class="filtre">Economique</p>
+				<p class="filtre">Économique</p>
 				<p class="filtre">Familial</p>
 				<p class="filtre">Romantique</p>
 				<p class="filtre">Animaux autorisés</p>
@@ -40,12 +41,13 @@
 
 		 <!--Hèbergements de la ville recherché-->
 
-		<div id="conteneurville">
-			<h2 id="marseille">Hèbergement à Marseille</h2>
-			<div id="elementville">
-				<div class="ville"><img src="../img/marseille1.jpg"><br>Auberge la Cannebière<br>Nuit à partir de 25E</div>
-				<div class="ville"><img src="../img/marseille2.jpg"><br>Hôtel de port<br>Nuit à partir de 52E</div>
-				<div class="ville"><img src="../img/marseille3.jpg"><br>Hôtel Les mouettes<br>Nuit à partir de 75E</div>
+		<div id="Hebergements">
+			<div id="conteneurville">
+				<h2 id="marseille">Hébergement à Marseille</h2>
+				<div id="elementville">
+					<div class="ville"><img src="../img/marseille1.jpg"><br>Auberge la Cannebière<br>Nuit à partir de 25E</div>
+					<div class="ville"><img src="../img/marseille2.jpg"><br>Hôtel de port<br>Nuit à partir de 52E</div>
+					<div class="ville"><img src="../img/marseille3.jpg"><br>Hôtel Les mouettes<br>Nuit à partir de 75E</	div>
 				<div class="ville"><img src="../img/marseille4.jpg"><br>Hôtel de la mer<br>Nuit à partir de 46E</div>
 				<div class="ville"><img src="../img/marseille5.jpg"><br>Auberge Le panier<br>Nuit àpartir de 23E</div>
 				<div class="ville"><img src="../img/marseille6.jpg"><br>Hôtel chez Amina<br>Nuit à partir de 90E</div>
@@ -53,31 +55,39 @@
 			<p>Afficher plus</p>
         </div>
         
-        <!--Les hôtels les plus populaires--> 
+       	
 
-		<div id="conteneurhotel">
-			<h2 >Les plus populaires</h2>
-			<p>logo flêche</p>
-			<div id="elementhot">
-				<div class="hotel"><img src="../img/pop1.jpg"><br>Hôtel Le soleil du matin<br>Nuit à partir de 128E</div>
-				<div class="hotel"><img src="../img/pop2.jpg"><br>Au coeur de l'eau Chambres d'hôtes<br>Nuit à partir de 71E</div>
-				<div class="hotel"><img src="../img/pop3.jpg"><br>Hôtel tout bleu et blanc<br>Nuit à partir de 68E</div>
+		
+
+        <!-- Les hôtels les plus populaires -->
+
+			<div id="conteneurhotel">
+				<h2 >Les plus populaires</h2>
+				<p>logo flêche</p>
+				<div id="elementhot">
+					<div class="hotel"><img src="../img/pop1.jpg"><br>Hôtel Le soleil du matin<br>Nuit à partir de 128E</div>
+					<div class="hotel"><img src="../img/pop2.jpg"><br>Au coeur de l'eau Chambres d'hôtes<br>Nuit à partir de 71E	</div>
+					<div class="hotel"><img src="../img/pop3.jpg"><br>Hôtel tout bleu et blanc<br>Nuit à partir de 68E</div>
+				</div>
 			</div>
-		</div>
-        
+        </div>
+
+
         <!--Activités de la ville recherché-->
 
-		<div id="conteneuractivites">
-			<h2 >Activités à Marseille</h2>
-			<div id="elementsactivites">
-				<div class="activite"><img src="../img/act1.jpg"><br>Vieux Port</div>
-				<div class="activite"><img src="../img/act2.jpg"><br>Fort de Pomègues</div>
-				<div class="activite"><img src="../img/act3.jpg"><br>Iles du Frioul</div>
-				<div class="activite"><img src="../img/act4.jpg"><br>Parc National des Calanques</div>
-				<div class="activite"><img src="../img/act5.jpg"><br>Notre-Dame-de-la-Garde</div>
-				<div><img src="../img/act6.jpg"><br>Longchamp</div> Parc 
+			<div id="conteneuractivites">
+				<h2 id="activites">Activités à Marseille</h2>
+				<div id="elementsactivites">
+					<div class="activite"><img src="../img/act1.jpg"><br>Vieux Port</div>
+					<div class="activite"><img src="../img/act2.jpg"><br>Fort de Pomègues</div>
+					<div class="activite"><img src="../img/act3.jpg"><br>Iles du Frioul</div>
+					<div class="activite"><img src="../img/act4.jpg"><br>Parc National des Calanques</div>
+					<div class="activite"><img src="../img/act5.jpg"><br>Notre-Dame-de-la-Garde</div>
+					<div><img src="../img/act6.jpg"><br>Longchamp</div> Parc 
+				</div>
 			</div>
-		</div>
+		
+		
 
 		<footer>
 			

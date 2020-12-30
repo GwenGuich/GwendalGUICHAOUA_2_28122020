@@ -1,4 +1,28 @@
+@import url('https://fonts.googleapis.com/css2? family = Raleway & display = swap');
+
+*
+{
+	font-family: 'Raleway', sans serif; 
+}
+
+
+body
+{
+	margin-left: 50px;
+	margin-top: 40px;
+	margin-right: 50px; 
+}
+
+
+
 /* header */
+
+header
+{
+	display: flex;
+	justify-content: space-between;
+	background-color: white;
+}
 
 #logoreservia
 {
@@ -6,17 +30,24 @@
     justify-content: flex-start;
 }
 
-#navigation
+#navigation 
 {
     display: flex;
-    justify-content: flex-end;
+    justify-content: row-reverse;
+
 }
 
-header
+.boutonnavigation
 {
-	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
+	text-decoration: none;
 }
+
+.inscription
+{
+	color: #0065FC;
+}
+
 
 /* section recherche */
 	
@@ -28,17 +59,34 @@ header
 
 #filtres
 {
+	
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: flex-start;
+	font-weight: bold;
 }
 
 .filtre
 {
 	display: flex;
+	margin-left: 30px;
 
 }
 
+/* Bloc hébergements */
+
+.ville
+{
+	max-width: 100%;
+}
+
+#hebergements
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: auto;
+}
 
 /* Hèbergements de la ville recherché */
 
@@ -48,13 +96,28 @@ header
 }
 
 /* Les hôtels les plus populaires */
+.hotel
+{
+	max-width: 100%;
+}
 
 #conteneurhotel
 {
 	display: flex;
+	flex-direction:  column;
+}
+
+#elementhot
+{
+	display: flex;
+	flex-direction:  column;
 }
 
 /* Activités de la ville recherché */
+
+.activite
+{
+	max-width: 100%;
 
 #conteneuractivites
 {
