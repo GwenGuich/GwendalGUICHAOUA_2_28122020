@@ -5,6 +5,7 @@
 		<title>reservia</title>
 		<link rel="stylesheet" type="text/css" href="../css/styles.css">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet"> 
 	</head>
 	
@@ -12,16 +13,19 @@
 		<header>
 			<img class="logoreservia" src="../img/reservia.svg" alt="logo de réservia">
 			<nav class="navigation">
-				<button class="boutonnavigation"><a href="#marseille"> Hébergements</a></button>
-				<button class="boutonnavigation"><a href="#activites"> Activités</a></button>
-				<button id="inscrition">S'inscrire</button>
+				<a href="#marseille"><button class="boutonnavigation">Hébergements</button></a>
+				<a href="#activites"><button class="boutonnavigation">Activités</button></a>
+				<a href="page.html" target="_blank"><button class="inscrition">S'inscrire</button></a>
 			</nav>
         </header>
 		
-		<!-- section recherche -->
+		
+			
+
+			<!-- section recherche -->
 
 		<section id="recherche">
-			<h1>Trouver votre hébergement pour des vacances de rêve</h1> 
+			<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 			<p>En plein centre ville ou en pleine nature</p>
 			<div id="barrerecherche">
             	<i class="fas fa-map-marker-alt"></i>
@@ -46,29 +50,56 @@
 			<div id="conteneurville">
 				<h2 id="marseille">Hébergement à Marseille</h2>
 				<div id="elementville">
-					<div class="ville"><img src="../img/marseille1.jpg"><br>Auberge la Cannebière<br>Nuit à partir de 25E</div>
-					<div class="ville"><img src="../img/marseille2.jpg"><br>Hôtel de port<br>Nuit à partir de 52E</div>
-					<div class="ville"><img src="../img/marseille3.jpg"><br>Hôtel Les mouettes<br>Nuit à partir de 75E</	div>
-				<div class="ville"><img src="../img/marseille4.jpg"><br>Hôtel de la mer<br>Nuit à partir de 46E</div>
-				<div class="ville"><img src="../img/marseille5.jpg"><br>Auberge Le panier<br>Nuit àpartir de 23E</div>
-				<div class="ville"><img src="../img/marseille6.jpg"><br>Hôtel chez Amina<br>Nuit à partir de 90E</div>
-			</div>
-			<p>Afficher plus</p>
-        </div>
-        
-       	
-
-		
-
-        <!-- Les hôtels les plus populaires -->
+					<div class="ville">
+						<img src="../img/marseille1.jpg" height="100px"><br>Auberge la Cannebière<br>Nuit à partir de 25E
+					</div>
+					<div class="ville">
+						<img src="../img/marseille2.jpg" height="100px">
+						<p>Hôtel de port</p>
+						<p>Nuit à partir de 52E</p>
+					</div>
+					<div class="ville">
+						<img src="../img/marseille3.jpg" height="100px">
+						<p>Hôtel Les mouettes</p>
+						<p>Nuit à partir de 75E</p>
+					</div>
+					<div class="ville">
+						<img src="../img/marseille4.jpg" height="100px">
+						<p>Hôtel de la mer</p>
+						<p>Nuit à partir de 46E</p>
+					</div>
+					<div class="ville">
+						<img src="../img/marseille5.jpg" height="100px">
+						<p>Auberge Le panier</p>
+						<p>Nuit àpartir de 23E</p>
+					</div>
+					<div class="ville">
+						<img src="../img/marseille6.jpg" height="100px">
+						<p>Hôtel chez Amina</p>
+						<p>Nuit à partir de 90E</p>
+					</div>
+				</div>
+				<p>Afficher plus</p>
+			</div>	
+			
+       
+            <!-- Les hôtels les plus populaires -->
 
 			<div id="conteneurhotel">
-				<h2 >Les plus populaires</h2>
-				<i class="fas fa-chart-line"></i>
+				<div id="titrepopulaire">
+					<h2 >Les plus populaires</h2>
+					<i class="fas fa-chart-line"></i>
+				</div>
 				<div id="elementhot">
-					<div class="hotel"><img src="../img/pop1.jpg"><br>Hôtel Le soleil du matin<br>Nuit à partir de 128E</div>
-					<div class="hotel"><img src="../img/pop2.jpg"><br>Au coeur de l'eau Chambres d'hôtes<br>Nuit à partir de 71E	</div>
-					<div class="hotel"><img src="../img/pop3.jpg"><br>Hôtel tout bleu et blanc<br>Nuit à partir de 68E</div>
+					<div class="hotel">
+						<img src="../img/pop1.jpg" height="100px"><br>Hôtel Le soleil du matin<br>Nuit à partir de 128E
+					</div>
+					<div class="hotel">
+						<img src="../img/pop2.jpg" height="100px"><br>Au coeur de l'eau Chambres d'hôtes<br>Nuit à partir de 71E	
+					</div>
+					<div class="hotel">
+						<img src="../img/pop3.jpg" height="100px"><br>Hôtel tout bleu et blanc<br>Nuit à partir de 68E
+					</div>
 				</div>
 			</div>
         </div>
@@ -76,22 +107,23 @@
 
         <!--Activités de la ville recherché-->
 
-			<div id="conteneuractivites">
-				<h2 id="activites">Activités à Marseille</h2>
-				<div id="elementsactivites">
-					<div class="activite"><img src="../img/act1.jpg"><br>Vieux Port</div>
-					<div class="activite"><img src="../img/act2.jpg"><br>Fort de Pomègues</div>
-					<div class="activite"><img src="../img/act3.jpg"><br>Iles du Frioul</div>
-					<div class="activite"><img src="../img/act4.jpg"><br>Parc National des Calanques</div>
-					<div class="activite"><img src="../img/act5.jpg"><br>Notre-Dame-de-la-Garde</div>
-					<div><img src="../img/act6.jpg"><br>Longchamp</div> Parc 
-				</div>
+		<div id="conteneuractivites">
+			<h2 id="activites">Activités à Marseille</h2>
+			<div id="elementsactivites">
+				<div class="activite"><img src="../img/act1.jpg"><br>Vieux Port</div>
+				<div class="activite"><img src="../img/act2.jpg"><br>Fort de Pomègues</div>
+				<div class="activite"><img src="../img/act3.jpg"><br>Iles du Frioul</div>
+				<div class="activite"><img src="../img/act4.jpg"><br>Parc National des Calanques</div>
+				<div class="activite"><img src="../img/act5.jpg"><br>Notre-Dame-de-la-Garde</div>
+				<div><img src="../img/act6.jpg"><br>Longchamp</div> Parc 
 			</div>
+		</div>
 		
 		
 
 		<footer id="footer">
-			
+
+			<nav>
 				<ul id="propos">
 					<li class="footer">A propos</li>
 					<li class="footer">Fonctionnement du site</li>															
@@ -110,7 +142,7 @@
 					<li class="footer">Centre d'aide</li>
 					<li class="footer">Nous contacter</li>
 				</ul>
-			
+			</nav>
 		</footer>
 	</body>
 </html>
