@@ -45,7 +45,8 @@ header
 {
 	border: none;
 	background-color: white;
-	
+	color: white;
+
 }
 
 
@@ -55,7 +56,7 @@ header
 {
 	display: flex;
 	flex-direction: column;
-	justify-content: normal;
+	justify-content: start;
 }
 
 #titre 
@@ -83,19 +84,8 @@ header
 
 /* Bloc hébergements */
 
-.ville
-{
-	
-}
 
-#hebergements
-{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	
-	
-}
+
 
 /* Hèbergements de la ville recherché */
 
@@ -103,20 +93,88 @@ header
 {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: start;
+	max-width: 65%;
+	background-color: green;
+	padding: 2%
+	border: grey;
+	border-radius: 20px;
+
+	
 }
 
+#ligne1
+{
+	display: flex;
+	flex-direction: row;
+	max-width: 100%;
+    height: auto;
+	 
+
+}	
+
+#ligne2
+{
+	display: flex;
+	flex-direction: row;
+	max-width: 100%;
+    height: auto;
+}
+
+#elementville
+{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: red;
+	border: grey;
+	border-radius: 20px;
+
+
+}	
+
+.ville 
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+
+
+}
+
+
+
 /* Les hôtels les plus populaires */
+
+#titrepopulaire
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+
+
 .hotel
 {
-	
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	overflow: hidden;
 }
 
 #conteneurhotel
 {
 	display: flex;
 	flex-direction:  column;
+	background-color: blue;
+	max-width: 20%;
+	padding: 1%;
+	border: grey;
+	border-radius: 20px;
 }
+
 
 #elementhot
 {
@@ -128,21 +186,71 @@ header
 
 .activite
 {
-	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+}
 
 #conteneuractivites
 {
 	display: flex;
+	flex-direction: column;
+}
+
+#elementsactivites
+{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+
 }
 
 
 
 /* Footer */
 
-footer
+#footer
 {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	background-color: #F2F2F2;
 }
 
+#apropos
+{
+	font-weight: bold;
+}
+
+#noshebergements
+{
+	font-weight: bold;
+}
+
+#assistance
+{
+	font-weight: bold;
+}
+
+
+
+#blockpropos 
+{
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+}
+
+#blockhebergements
+{
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+}
+
+#blockassistance
+{
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+}
