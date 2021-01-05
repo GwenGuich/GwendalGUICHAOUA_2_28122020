@@ -2,9 +2,7 @@
 
 body
 {
-	margin-left: 50px;
 	margin-top: 40px;
-	margin-right: 50px; 
 	font-family: 'Raleway', sans serif;
 }
 
@@ -17,6 +15,7 @@ header
 	display: flex;
 	justify-content: space-between;
 	background-color: white;
+	margin: 40px;
 }
 
 #logoreservia
@@ -57,6 +56,19 @@ header
 	display: flex;
 	flex-direction: column;
 	justify-content: start;
+	margin: 40px;
+}
+
+.iconfiltre
+{
+	
+	vertical-align: middle;
+	width: 25px;
+	height: 25px;
+	color: #0065FC;
+	background-color: #DEEBFF;
+	border-radius: 20px;
+	margin-right: 10px;
 }
 
 #titre 
@@ -78,7 +90,11 @@ header
 .filtre
 {
 	display: flex;
+	border: solid #F2F2F2;
 	margin-left: 5%;
+	border-radius: 20px;
+	padding-right: 10px;
+	padding-left: 10px;
 
 }
 
@@ -94,8 +110,9 @@ header
 	display: flex;
 	flex-direction: column;
 	justify-content: start;
+	margin: 40px;
 	max-width: 65%;
-	background-color: green;
+	background-color: #F2F2F2;
 	padding: 2%
 	border: grey;
 	border-radius: 20px;
@@ -127,7 +144,7 @@ header
 	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: space-between;
-	background-color: red;
+	background-color: #F2F2F2;
 	border: grey;
 	border-radius: 20px;
 
@@ -136,7 +153,10 @@ header
 
 .ville 
 {
+	background-size: cover;
+	background-position: center;
 	display: flex;
+	flex: 1;
 	flex-direction: column;
 	justify-content: flex-start;
 
@@ -168,7 +188,8 @@ header
 {
 	display: flex;
 	flex-direction:  column;
-	background-color: blue;
+	background-color: #F2F2F2;
+	margin: 40px;
 	max-width: 20%;
 	padding: 1%;
 	border: grey;
@@ -188,12 +209,15 @@ header
 {
 	display: flex;
 	flex-direction: column;
+	
 }
 
 #conteneuractivites
 {
 	display: flex;
 	flex-direction: column;
+	margin: 40px;
+
 }
 
 #elementsactivites
@@ -215,6 +239,8 @@ header
 	flex-direction: row;
 	justify-content: space-between;
 	background-color: #F2F2F2;
+
+
 }
 
 #apropos
@@ -230,6 +256,7 @@ header
 #assistance
 {
 	font-weight: bold;
+	margin-right: 500px;
 }
 
 
