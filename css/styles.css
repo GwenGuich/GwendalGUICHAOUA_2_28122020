@@ -1,17 +1,13 @@
 
 
-body
-{
+body{
 	margin-top: 40px;
 	font-family: 'Raleway', sans serif;
 }
 
-
-
 /* header */
 
-header
-{
+header{
 	display: flex;
 	justify-content: space-between;
 	background-color: white;
@@ -19,14 +15,12 @@ header
 	margin-right: 40px;
 }
 
-#logoreservia
-{
+#logoreservia{
     display: flex;
     justify-content: flex-start;
 }
 
-.navigation 
-{
+.navigation {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -34,80 +28,121 @@ header
     width: 400px;
 }
 
-.ancres
-{
+.ancres{
 	text-decoration: none;
 	color: black;
 }
 
-.ancres:hover
-{
+.ancres:hover{
 	color: #0065FC;
 }
 
-.sinscrire
-{
+.sinscrire{
 	text-decoration: none;
 	font-weight: bold;
 	color: #0065FC;
 }
 
-.inscription
-{
+.inscription{
 	border: none;
 	background-color: white;
 	color: white;
-
 }
 
 
 /* section recherche */
 	
-#recherche
-{
+#recherche{
 	display: flex;
 	flex-direction: column;
 	justify-content: start;
-	margin: 40px;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+#titre-et-p1{
+	display: flex;
+	flex-direction: column;
+}
+
+#titre
+{
+	margin-bottom: 0px;
+}
+
+#p1{
+	margin-top: 0px;
+}
+
+#barrerecherche{
+	display: flex;
+	
+}
+
+.mapmarker{
+	padding: 10px;
+	padding-left: 12px;
+	padding-right: 12px;
+    vertical-align: middle; 
+	background-color: #F2F2F2; 
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+#exemple{
+	font-weight: 900;
+	font-family: 'Raleway', sans serif;
+
+}
+
+#button-recherche{
+	color: white;
+	background-color: #0065FC;
+	border-color: #0065FC;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	padding: 10px;
+	outline: none;
 }
 
 .iconfiltre
 {
 	
-	vertical-align: middle;
-	width: 25px;
-	height: 25px;
+	padding: 10px;
+	padding-left: 12px;
+	padding-right: 12px;
 	color: #0065FC;
 	background-color: #DEEBFF;
 	border-radius: 20px;
 	margin-right: 10px;
 }
 
-#titre 
-{
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
+.basefiltre{
+	margin-top: 25px;
 }
 
 #filtres
 {
-	
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-start;
+	justify-content: start;
 	font-weight: bold;
+
 }
 
 .filtre
 {
-	display: flex;
+
 	border: solid #F2F2F2;
 	margin-left: 5%;
 	border-radius: 20px;
-	padding-right: 10px;
-	padding-left: 10px;
+	padding-right: 20px;
+	padding-left: 0px;
 
+}
+
+.filtre:hover{
+	border-color: #0065FC;
 }
 
 /* Bloc hébergements */
