@@ -15,7 +15,8 @@ header
 	display: flex;
 	justify-content: space-between;
 	background-color: white;
-	margin: 40px;
+	margin-left: 40px;
+	margin-right: 40px;
 }
 
 #logoreservia
@@ -24,20 +25,31 @@ header
     justify-content: flex-start;
 }
 
-#navigation 
+.navigation 
 {
     display: flex;
-    justify-content: row-reverse;
-
-
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    width: 400px;
 }
 
-.boutonnavigation
+.ancres
 {
-	border: none;
-	background-color: white;
+	text-decoration: none;
+	color: black;
+}
 
-	
+.ancres:hover
+{
+	color: #0065FC;
+}
+
+.sinscrire
+{
+	text-decoration: none;
+	font-weight: bold;
+	color: #0065FC;
 }
 
 .inscription
