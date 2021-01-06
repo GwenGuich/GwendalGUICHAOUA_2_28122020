@@ -8,24 +8,25 @@ body{
 /* header */
 
 header{
-	display: flex;
-	justify-content: space-between;
 	background-color: white;
 	margin-left: 40px;
 	margin-right: 40px;
 }
 
 #logoreservia{
-    display: flex;
-    justify-content: flex-start;
+ 
+   
+
+
 }
 
-.navigation {
+
+#navigation {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
+    flex-wrap: wrap;
     list-style: none;
-    width: 400px;
+    background-color: red;
 }
 
 .ancres{
@@ -41,13 +42,9 @@ header{
 	text-decoration: none;
 	font-weight: bold;
 	color: #0065FC;
+	background-color: red;
 }
 
-.inscription{
-	border: none;
-	background-color: white;
-	color: white;
-}
 
 
 /* section recherche */
@@ -124,7 +121,7 @@ header{
 #filtres
 {
 	display: flex;
-	flex-direction: row;
+	flex-wrap: wrap;
 	justify-content: start;
 	font-weight: bold;
 
@@ -145,7 +142,21 @@ header{
 	border-color: #0065FC;
 }
 
-/* Bloc hébergements */
+.info{
+	background-color: #0065FC;
+	color: white;
+	border: solid;
+	border-color: #F2F2F2;
+	border-radius: 20px;
+}
+
+/* Bloc des hotels */
+
+#blockhotels{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
 
 
 
@@ -158,44 +169,25 @@ header{
 	flex-direction: column;
 	justify-content: start;
 	margin: 40px;
-	max-width: 65%;
 	background-color: #F2F2F2;
-	padding: 2%
+	padding: 30px;
 	border: grey;
 	border-radius: 20px;
+	min-height: 600px;
+	max-width: 1000px
 
 	
-}
-
-#ligne1
-{
-	display: flex;
-	flex-direction: row;
-	max-width: 100%;
-    height: auto;
-	 
-
-}	
-
-#ligne2
-{
-	display: flex;
-	flex-direction: row;
-	max-width: 100%;
-    height: auto;
 }
 
 #elementville
 {
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: row;
 	justify-content: space-between;
 	background-color: #F2F2F2;
 	border: grey;
 	border-radius: 20px;
-
-
+	min-height: 400px;
 }	
 
 .ville 
@@ -206,11 +198,31 @@ header{
 	flex: 1;
 	flex-direction: column;
 	justify-content: flex-start;
+}
 
+.marseille1{
+	background-image: url(../img/marseille1.jpg); 
+}
+
+.marseille2{
 
 }
 
+.marseille3{
 
+}
+
+.marseille4{
+
+}
+
+.marseille5{
+
+}
+
+.marseille6{
+
+}
 
 /* Les hôtels les plus populaires */
 
@@ -276,55 +288,55 @@ header{
 
 }
 
-
-
 /* Footer */
 
-#footer
-{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+#blockfooter{
 	background-color: #F2F2F2;
-
-
 }
 
-#apropos
-{
+#footer{
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #F2F2F2;
+	text-decoration: none;
+	color: black;
+}
+
+.liens{
+	text-decoration: none;
+	color: black;
+}
+
+#apropos{
 	font-weight: bold;
 }
 
-#noshebergements
-{
+#noshebergements{
 	font-weight: bold;
 }
 
-#assistance
-{
+#assistance{
 	font-weight: bold;
-	margin-right: 500px;
 }
-
-
 
 #blockpropos 
 {
 	display: flex;
 	flex-direction: column;
 	list-style: none;
+	width: 500px;
 }
 
-#blockhebergements
-{
+#blockhebergements{
 	display: flex;
 	flex-direction: column;
 	list-style: none;
+	width: 500px;
 }
 
-#blockassistance
-{
+#blockassistance{
 	display: flex;
 	flex-direction: column;
 	list-style: none;
+	width: 500px;
 }
