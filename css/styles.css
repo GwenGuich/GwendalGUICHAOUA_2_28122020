@@ -15,9 +15,6 @@ header{
 	margin-right: 40px;
 }
 
-
-
-
 #navigation {
     display: flex;
     justify-content: flex-end;
@@ -29,7 +26,6 @@ header{
 	text-decoration: none;
 	color: black;
 	margin-right: 50px;
-
 }
 
 .ancres:hover{
@@ -40,10 +36,7 @@ header{
 	text-decoration: none;
 	font-weight: bold;
 	color: #0065FC;
-
 }
-
-
 
 /* section recherche */
 	
@@ -60,8 +53,7 @@ header{
 	flex-direction: column;
 }
 
-#titre
-{
+#titre{
 	margin-bottom: 0px;
 }
 
@@ -71,7 +63,6 @@ header{
 
 #barrerecherche{
 	display: flex;
-	
 }
 
 .mapmarker{
@@ -150,8 +141,10 @@ header{
 
 #blockhotels{
 	display: flex;
+	flex-wrap: wrap-reverse;
 	justify-content: space-between;
-	flex-wrap: wrap;
+	margin-left: 40px;
+	margin-right: 40px;
 }
 
 
@@ -164,13 +157,12 @@ header{
 	display: flex;
 	flex-direction: column;
 	justify-content: start;
-	margin: 40px;
 	background-color: #F2F2F2;
-	padding: 30px;
 	border: grey;
 	border-radius: 20px;
-	min-height: 600px;
-	max-width: 1000px
+	min-height: 700px;
+	min-width: 70%;
+	padding: 20px;
 
 	
 }
@@ -182,9 +174,7 @@ header{
 	justify-content: space-between;
 	background-color: #F2F2F2;
 	border: grey;
-	border-radius: 20px;
-	min-height: 400px;
-}	
+	}	
 
 .ville 
 {
@@ -197,7 +187,8 @@ header{
 }
 
 .marseille1{
-	background-image: url(../img/marseille1.jpg); 
+	
+
 }
 
 .marseille2{
@@ -220,6 +211,9 @@ header{
 
 }
 
+.marseille{
+	font-weight: bold;
+}
 /* Les hôtels les plus populaires */
 
 #titrepopulaire
@@ -227,6 +221,8 @@ header{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	max-width: 100%
+
 
 }
 
@@ -244,11 +240,14 @@ header{
 	display: flex;
 	flex-direction:  column;
 	background-color: #F2F2F2;
-	margin: 40px;
-	max-width: 20%;
+	min-width: 25%;
 	padding: 1%;
 	border: grey;
 	border-radius: 20px;
+}
+
+.fleche{
+	padding-top: 25px;
 }
 
 
@@ -337,10 +336,16 @@ header{
 	width: 450px;
 }
 
-/* Responsive */
+
+/*  responsive  */
 
 @media all and (max-width: 480px)
 {
+#navigation{
+	display: flex;
+	flex-direction: column-reverse;
+}
+
 #filtres{
 	display: flex;
 	flex-direction: column;
