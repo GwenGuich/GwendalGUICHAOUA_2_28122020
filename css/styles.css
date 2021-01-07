@@ -156,15 +156,12 @@ header{
 {
 	display: flex;
 	flex-direction: column;
-	justify-content: start;
+	justify-content: space-between;
 	background-color: #F2F2F2;
-	border: grey;
 	border-radius: 20px;
-	min-height: 700px;
-	min-width: 70%;
-	padding: 20px;
-
-	
+	min-height: 600px;
+	max-width: 1250px;
+	padding: 40px;
 }
 
 #elementville
@@ -173,43 +170,37 @@ header{
 	flex-wrap: wrap;
 	justify-content: space-between;
 	background-color: #F2F2F2;
-	border: grey;
-	}	
+	max-width: 100%;
+	max-height: 100%;
+}	
 
-.ville 
-{
+
+.hebergement{
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	border-radius: 20px;
+	margin-bottom: 20px;
+	max-width: 100%;
+}
+
+
+
+.vignette{
+	
+	background-image: url('../img/marseille1.jpg');
 	background-size: cover;
 	background-position: center;
-	display: flex;
-	flex: 1;
-	flex-direction: column;
-	justify-content: flex-start;
+	min-width: 350px;
+	min-height: 150px;
+	max-width: 100%;
+	border-radius: 20px 20px 0px 0px;
+	margin: 5px;
 }
 
-.marseille1{
-	
 
-}
 
-.marseille2{
 
-}
-
-.marseille3{
-
-}
-
-.marseille4{
-
-}
-
-.marseille5{
-
-}
-
-.marseille6{
-
-}
 
 .marseille{
 	font-weight: bold;
@@ -233,14 +224,17 @@ header{
 	flex-direction: row;
 	justify-content: flex-start;
 	overflow: hidden;
+	background-color: white;
+	border-radius: 20px;
 }
 
 #conteneurhotel
 {
 	display: flex;
-	flex-direction:  column;
+	flex-direction: column;
 	background-color: #F2F2F2;
-	min-width: 25%;
+	min-width: 20%;
+	max-width: 400px;
 	padding: 1%;
 	border: grey;
 	border-radius: 20px;
@@ -255,6 +249,7 @@ header{
 {
 	display: flex;
 	flex-direction:  column;
+
 }
 
 /* Activités de la ville recherché */
@@ -352,5 +347,34 @@ header{
 }	
 .filtre{	
 	max-width: 200px;
+}
+
+#conteneurville{
+	background-color: white;
+}
+
+
+
+}
+
+@media all and (max-width: 1850px)
+{
+#conteneurville{
+	background-color: white;
+}
+
+#elementville{
+	background-color: white;
+}
+
+#elementhot{
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#conteneurhotel{
+
+	max-width: 1800px;
 }
 }
