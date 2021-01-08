@@ -160,7 +160,7 @@ header{
 	background-color: #F2F2F2;
 	border-radius: 20px;
 	min-height: 600px;
-	max-width: 1100px;
+	max-width: 1150px;
 	padding: 40px;
 }
 
@@ -191,7 +191,7 @@ header{
 	background-size: cover;
 	background-position: center;
 	min-width: 320px;
-	min-height: 150px;
+	min-height: 200px;
 	max-width: 100%;
 	border-radius: 20px 20px 0px 0px;
 	margin: 5px;
@@ -202,7 +202,7 @@ header{
 	background-size: cover;
 	background-position: center;
 	min-width: 320px;
-	min-height: 150px;
+	min-height: 200px;
 	max-width: 100%;
 	border-radius: 20px 20px 0px 0px;
 	margin: 5px;
@@ -214,7 +214,7 @@ header{
 	background-size: cover;
 	background-position: center;
 	min-width: 320px;
-	min-height: 150px;
+	min-height: 200px;
 	max-width: 100%;
 	border-radius: 20px 20px 0px 0px;
 	margin: 5px;
@@ -226,7 +226,7 @@ header{
 	background-size: cover;
 	background-position: center;
 	min-width: 320px;
-	min-height: 150px;
+	min-height: 200px;
 	max-width: 100%;
 	border-radius: 20px 20px 0px 0px;
 	margin: 5px;
@@ -238,7 +238,7 @@ header{
 	background-size: cover;
 	background-position: center;
 	min-width: 320px;
-	min-height: 150px;
+	min-height: 200px;
 	max-width: 100%;
 	border-radius: 20px 20px 0px 0px;
 	margin: 5px;
@@ -250,7 +250,7 @@ header{
 	background-size: cover;
 	background-position: center;
 	min-width: 320px;
-	min-height: 150px;
+	min-height: 200px;
 	max-width: 100%;
 	border-radius: 20px 20px 0px 0px;
 	margin: 5px;
@@ -294,10 +294,7 @@ header{
 	flex-direction: row;
 	justify-content: space-between;
 	max-width: 100%
-
-
 }
-
 
 .hotel
 {
@@ -313,9 +310,10 @@ header{
 {
 	display: flex;
 	flex-direction: column;
+	justify-content: space-around;
 	background-color: #F2F2F2;
 	min-width: 20%;
-	max-width: 400px;
+	min-height: 400px;
 	padding: 1%;
 	border: grey;
 	border-radius: 20px;
@@ -323,14 +321,78 @@ header{
 
 .fleche{
 	padding-top: 25px;
+	padding-right: 25px;
 }
 
+#vignettes_hotel_populaire{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 600px;
+
+	
+}
+
+.nom_et_prix{
+	margin-left: 20px;
+}
 
 #elementhot
 {
 	display: flex;
-	flex-direction:  column;
+	flex-direction: column;
+	justify-content: space-around;
+}
 
+.img_hotel_populaire1{
+	background-image: url('../img/pop1.jpg');
+	background-size: cover;
+	background-position: center;
+	min-width: 150px;
+	min-height: 150px;
+	max-width: 100%;
+	border-radius: 20px 0px 0px 20px;
+	margin: 5px;
+	padding-bottom: 10px;
+
+}
+
+.img_hotel_populaire2{
+	background-image: url('../img/pop2.jpg');
+	background-size: cover;
+	background-position: center;
+	min-width: 150px;
+	min-height: 150px;
+	max-width: 100%;
+	border-radius: 20px 0px 0px 20px;
+	margin: 5px;
+	margin-bottom: 10px;
+}
+
+.img_hotel_populaire3{
+	background-image: url('../img/pop3.jpg');
+	background-size: cover;
+	background-position: center;
+	min-width: 150px;
+	min-height: 150px;
+	max-width: 100%;
+	border-radius: 20px 0px 0px 20px;
+	margin: 5px;
+	padding-bottom: 10px;
+}
+
+.nom_hotel_populaire{
+	font-weight: bold;
+	margin-bottom: 0px;
+
+}
+
+.prix_hotel_populaire{
+	margin-top: 0px;
+}
+
+.note_populaire{
+	margin-top: 80px;
 }
 
 /* Activités de la ville recherché */
@@ -417,9 +479,22 @@ header{
 
 @media all and (max-width: 480px)
 {
+
+#blockhotels{
+	flex-direction: column-reverse;
+	justify-content: flex-start;
+	padding: 0;
+	margin: 0; 
+}
+
+#conteneurhotel{
+	border-radius: 0; 
+}
+
 #navigation{
 	display: flex;
 	flex-direction: column-reverse;
+	justify-content: space-between;
 }
 
 #filtres{
@@ -427,11 +502,17 @@ header{
 	flex-direction: column;
 }	
 .filtre{	
-	max-width: 200px;
+	max-width: 300px;
 }
 
 #conteneurville{
 	background-color: white;
+	padding: 0;
+}
+
+#conteneurhotel{
+	border-radius: 0px 0px 0px 0px;
+	
 }
 
 
@@ -441,9 +522,11 @@ header{
 @media all and (max-width: 1850px){
 
 #blockhotels{
-	margin-left: 0px;
-	margin-right: 0px; 
+	margin: 5%; 
+	padding-left: 0;
 }
+
+
 
 .hebergement{
 	box-shadow: 4px 4px 8px 4px #F2F2F2 ;
@@ -451,13 +534,14 @@ header{
 
 #conteneurville{
 	background-color: white;
+
 }
 
 #elementville{
 	background-color: white;
 }
 
-#elementhot{
+#elementhotel{
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -465,6 +549,15 @@ header{
 
 #conteneurhotel{
 
-	max-width: 1800px;
+	min-width: 98%;
+
+	
 }
+
+#vignettes_hotel_populaire{
+	display: flex;
+	flex-direction: wrap;
+	justify-content: space-around;
+}
+
 }
