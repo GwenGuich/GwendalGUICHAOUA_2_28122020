@@ -160,7 +160,7 @@ header{
 	background-color: #F2F2F2;
 	border-radius: 20px;
 	min-height: 600px;
-	max-width: 1250px;
+	max-width: 1100px;
 	padding: 40px;
 }
 
@@ -186,19 +186,100 @@ header{
 
 
 
-.vignette{
-	
+.vignette1{
 	background-image: url('../img/marseille1.jpg');
 	background-size: cover;
 	background-position: center;
-	min-width: 350px;
+	min-width: 320px;
 	min-height: 150px;
 	max-width: 100%;
 	border-radius: 20px 20px 0px 0px;
 	margin: 5px;
 }
 
+.vignette2{
+	background-image: url('../img/marseille2.jpg');
+	background-size: cover;
+	background-position: center;
+	min-width: 320px;
+	min-height: 150px;
+	max-width: 100%;
+	border-radius: 20px 20px 0px 0px;
+	margin: 5px;
+}
 
+.vignette3{
+	
+	background-image: url('../img/marseille3.jpg');
+	background-size: cover;
+	background-position: center;
+	min-width: 320px;
+	min-height: 150px;
+	max-width: 100%;
+	border-radius: 20px 20px 0px 0px;
+	margin: 5px;
+}
+
+.vignette4{
+	
+	background-image: url('../img/marseille4.jpg');
+	background-size: cover;
+	background-position: center;
+	min-width: 320px;
+	min-height: 150px;
+	max-width: 100%;
+	border-radius: 20px 20px 0px 0px;
+	margin: 5px;
+}
+
+.vignette5{
+	
+	background-image: url('../img/marseille5.jpg');
+	background-size: cover;
+	background-position: center;
+	min-width: 320px;
+	min-height: 150px;
+	max-width: 100%;
+	border-radius: 20px 20px 0px 0px;
+	margin: 5px;
+}
+
+.vignette6{
+	
+	background-image: url('../img/marseille6.jpg');
+	background-size: cover;
+	background-position: center;
+	min-width: 320px;
+	min-height: 150px;
+	max-width: 100%;
+	border-radius: 20px 20px 0px 0px;
+	margin: 5px;
+}
+
+.nomhotel{
+	font-weight: bold;
+	margin-left: 20px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+.prixhotel{
+	margin-left: 20px;
+	margin-top: 0px;
+}
+
+.stars{
+	margin-left: 20px;
+	margin-bottom: 15px;
+}
+
+.starblue{
+	color: #0065FC;
+}
+
+.stargrey{
+	color: #F2F2F2;
+}
 
 
 
@@ -357,8 +438,17 @@ header{
 
 }
 
-@media all and (max-width: 1850px)
-{
+@media all and (max-width: 1850px){
+
+#blockhotels{
+	margin-left: 0px;
+	margin-right: 0px; 
+}
+
+.hebergement{
+	box-shadow: 4px 4px 8px 4px #F2F2F2 ;
+}
+
 #conteneurville{
 	background-color: white;
 }
