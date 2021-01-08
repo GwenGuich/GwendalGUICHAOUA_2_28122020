@@ -397,29 +397,103 @@ header{
 
 /* Activités de la ville recherché */
 
-.activite
-{
-	display: flex;
-	flex-direction: column;
-	
-}
+
 
 #conteneuractivites
 {
 	display: flex;
 	flex-direction: column;
 	margin: 40px;
+	max-width: 100%
 
 }
 
-#elementsactivites
-{
+.vignette_activites{ 
 	display: flex;
-	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: space-between;
 
+	background-color: white;
+	border-radius: 20px;
+	margin-bottom: 20px;
+	max-width: 300px;
+	box-shadow: 4px 4px 8px 4px #F2F2F2;
 }
+ 
+
+.act1{
+background-image: url('../img/act1.jpg');
+	background-size: cover;
+	background-position: center;
+	
+	min-height: 200px;
+	max-width: 200px;
+	border-radius: 20px 20px 0px 0px;
+	margin: 5px;
+}
+
+.act2{
+background-image: url('../img/act2.jpg');
+	background-size: cover;
+	background-position: center;
+	min-width: 320px;
+	min-height: 200px;
+	max-width: 320px;
+	border-radius: 20px 20px 0px 0px;
+	margin: 5px;
+}
+
+.act3{
+background-image: url('../img/act3.jpg');
+	background-size: cover;
+	background-position: center;
+	min-width: 320px;
+	min-height: 200px;
+	max-width: 320px;
+	border-radius: 20px 20px 0px 0px;
+	margin: 5px;
+}
+
+.act4{
+background-image: url('../img/act4.jpg');
+	background-size: cover;
+	background-position: center;
+	min-width: 320px;
+	min-height: 200px;
+	max-width: 320px;
+	border-radius: 20px 20px 0px 0px;
+	margin: 5px;
+}
+
+.act5{
+background-image: url('../img/act5.jpg');
+	background-size: cover;
+	background-position: center;
+	min-width: 320px;
+	min-height: 200px;
+	max-width: 320px;
+	border-radius: 20px 20px 0px 0px;
+	margin: 5px;
+}
+
+.act6{
+background-image: url('../img/act6.jpg');
+	background-size: cover;
+	background-position: center;
+	min-width: 320px;
+	min-height: 200px;
+	max-width: 320px;
+	border-radius: 20px 20px 0px 0px;
+	margin: 5px;
+}
+
+.nomactivite{
+	font-weight: bold;
+	margin-left: 20px;
+}
+
+
+
 
 /* Footer */
 
