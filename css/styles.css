@@ -5,30 +5,24 @@ body{
 }
 
 #limites{
+	margin: 0 auto;
 	max-width: 1900px;
 }
 
-/* Header */
+/* header */
 
-header{
-	display: grid;
-    align-items: center;
-    max-width: 1900px;
-    margin: auto;
-}
 
-.headerlogo{}
+/* section recherche */
+	
 
-.navigation{
-	display: flex;
-	align-items: center;
-}
+/* Hèbergements de la ville recherché */
 
-.liens_navigation{
-	display: flex;
-	align-items: center;
-}
 
-.inscription{
-		grid-row-end: auto;
-}
+/* Les hôtels les plus populaires */
+
+
+/* footer */
+
+
+/* responsive */
+
